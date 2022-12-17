@@ -1,10 +1,10 @@
-### 1. Chip
+### 1. Board
 
-#### 1.1 Chip Info
+#### 1.1Board Info
 
-chip name : Raspberry Pi 4B.
+Board Name: Raspberry Pi 4B.
 
-spi pin: SCLK/MISO/CS GPIO11/GPIO9/GPIO8.
+SPI Pin: SCLK/MISO/CS GPIO11/GPIO9/GPIO8.
 
 ### 2. Install
 
@@ -75,17 +75,35 @@ find_package(max6675 REQUIRED)
 
 #### 3.1 Command Instruction
 
-​           max6675 is a basic command which can test all max6675 driver function:
+1. Show max6675 chip and driver information.
 
-​           -i        show max6675 chip and driver information.
+   ```shell
+   max6675 (-i | --information)
+   ```
 
-​           -h       show max6675 help.
+2. Show max6675 help.
 
-​           -p       show max6675 pin connections of the current board.
+   ```shell
+   max6675 (-h | --help)
+   ```
 
-​           -t  read <times>        run max6675 read test.times is the test times. 
+3. Show max6675 pin connections of the current board.
 
-​           -c read <times>        run max6675 read function.times is the read times. 
+   ```shell
+   max6675 (-p | --port)
+   ```
+
+4. Run max6675 read test, times is the test times. 
+
+   ```shell
+   max6675 (-t read | --test=read) [--times=<num>]
+   ```
+
+5. Run max6675 read function, times is the read times. 
+
+   ```shell
+   max6675 (-e read | --example=read) [--times=<num>]
+   ```
 
 #### 3.2 Command Example
 
@@ -112,7 +130,7 @@ max6675: CS connected to GPIO8(BCM).
 ```
 
 ```shell
-./max6675 -t read 3
+./max6675 -t read --times=3
 
 max6675: chip is Maxim Integrated MAX6675.
 max6675: manufacturer is Maxim Integrated.
@@ -124,32 +142,36 @@ max6675: max current is 1.50mA.
 max6675: max temperature is 85.0C.
 max6675: min temperature is -20.0C.
 max6675: start read test.
-max6675: temperature is 29.50C.
-max6675: temperature is 29.50C.
-max6675: temperature is 29.50C.
+max6675: temperature is 26.50C.
+max6675: temperature is 26.50C.
+max6675: temperature is 26.25C.
 max6675: finish read test.
 ```
 
 ```shell
-./max6675 -c read 3
+./max6675 -e read --times=3
 
-1/3 29.50C.
-2/3 29.50C.
-3/3 29.50C.
+1/3 26.50C.
+2/3 26.50C.
+3/3 26.50C.
 ```
 
 ```shell
 ./max6675 -h
 
-max6675 -i
-	show max6675 chip and driver information.
-max6675 -h
-	show max6675 help.
-max6675 -p
-	show max6675 pin connections of the current board.
-max6675 -t read <times>
-	run max6675 read test.times is the test times.
-max6675 -c read <times>
-	run max6675 read function.times is the read times.
+Usage:
+  max6675 (-i | --information)
+  max6675 (-h | --help)
+  max6675 (-p | --port)
+  max6675 (-t read | --test=read) [--times=<num>]
+  max6675 (-e read | --example=read) [--times=<num>]
+
+Options:
+  -e <read>, --example=<read>        Run the driver example.
+  -h, --help                         Show the help.
+  -i, --information                  Show the chip information.
+  -p, --port                         Display the pin connections of the current board.
+  -t <read>, --test=<read>           Run the driver test.
+      --times=<num>                  Set the running times.([default: 3])
 ```
 
