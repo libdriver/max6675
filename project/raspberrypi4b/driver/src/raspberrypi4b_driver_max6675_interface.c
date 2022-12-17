@@ -46,7 +46,7 @@
 /**
  * @brief spi device hanble definition
  */
-static int gs_spi_fd;                       /**< spi handle */
+static int gs_fd;                           /**< spi handle */
 
 /**
  * @brief  interface spi bus init
@@ -57,7 +57,7 @@ static int gs_spi_fd;                       /**< spi handle */
  */
 uint8_t max6675_interface_spi_init(void)
 {
-    return spi_init(SPI_DEVICE_NAME, &gs_spi_fd, SPI_MODE_TYPE_0, 1000 * 1000 * 1);
+    return spi_init(SPI_DEVICE_NAME, &gs_fd, SPI_MODE_TYPE_0, 1000 * 1000 * 1);
 }
 
 /**
@@ -69,7 +69,7 @@ uint8_t max6675_interface_spi_init(void)
  */
 uint8_t max6675_interface_spi_deinit(void)
 {   
-    return spi_deinit(gs_spi_fd);
+    return spi_deinit(gs_fd);
 }
 
 /**
@@ -83,7 +83,7 @@ uint8_t max6675_interface_spi_deinit(void)
  */
 uint8_t max6675_interface_spi_read_cmd(uint8_t *buf, uint16_t len)
 {
-    return spi_read_cmd(gs_spi_fd, buf, len);
+    return spi_read_cmd(gs_fd, buf, len);
 }
 
 /**
