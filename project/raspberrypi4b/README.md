@@ -1,6 +1,6 @@
 ### 1. Board
 
-#### 1.1Board Info
+#### 1.1 Board Info
 
 Board Name: Raspberry Pi 4B.
 
