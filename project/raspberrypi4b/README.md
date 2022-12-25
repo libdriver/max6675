@@ -93,13 +93,13 @@ find_package(max6675 REQUIRED)
    max6675 (-p | --port)
    ```
 
-4. Run max6675 read test, times is the test times. 
+4. Run max6675 read test, num is the test times. 
 
    ```shell
    max6675 (-t read | --test=read) [--times=<num>]
    ```
 
-5. Run max6675 read function, times is the read times. 
+5. Run max6675 read function, num is the read times. 
 
    ```shell
    max6675 (-e read | --example=read) [--times=<num>]
