@@ -50,7 +50,7 @@
 
 /**
  * @brief      read bytes
- * @param[in]  *handle points to an max6675 handle structure
+ * @param[in]  *handle points to a max6675 handle structure
  * @param[out] *data points to a data buffer
  * @return     status code
  *             - 0 success
@@ -75,7 +75,7 @@ static uint8_t a_max6675_spi_read(max6675_handle_t *handle, uint16_t *data)
 
 /**
  * @brief     initialize the chip
- * @param[in] *handle points to an max6675 handle structure
+ * @param[in] *handle points to a max6675 handle structure
  * @return    status code
  *            - 0 success
  *            - 1 spi initialization failed
@@ -140,7 +140,7 @@ uint8_t max6675_init(max6675_handle_t *handle)
 
 /**
  * @brief     close the chip
- * @param[in] *handle points to an max6675 handle structure
+ * @param[in] *handle points to a max6675 handle structure
  * @return    status code
  *            - 0 success
  *            - 1 deinit failed
@@ -175,7 +175,7 @@ uint8_t max6675_deinit(max6675_handle_t *handle)
 
 /**
  * @brief      read the temperature
- * @param[in]  *handle points to an max6675 handle structure
+ * @param[in]  *handle points to a max6675 handle structure
  * @param[out] *raw points to a raw data buffer
  * @param[out] *temp points to a temp buffer
  * @return     status code
@@ -221,7 +221,7 @@ uint8_t max6675_read(max6675_handle_t *handle,uint16_t *raw, float *temp)
 
 /**
  * @brief      get the chip register
- * @param[in]  *handle points to an max6675 handle structure
+ * @param[in]  *handle points to a max6675 handle structure
  * @param[out] *data points to a data buffer
  * @return     status code
  *             - 0 success
@@ -246,7 +246,7 @@ uint8_t max6675_get_reg(max6675_handle_t *handle, uint16_t *data)
 
 /**
  * @brief      get chip's information
- * @param[out] *info points to an max6675 info structure
+ * @param[out] *info points to a max6675 info structure
  * @return     status code
  *             - 0 success
  *             - 2 handle is NULL
