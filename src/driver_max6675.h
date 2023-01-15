@@ -98,7 +98,7 @@ typedef struct max6675_info_s
 
 /**
  * @brief     initialize max6675_handle_t structure
- * @param[in] HANDLE points to an max6675 handle structure
+ * @param[in] HANDLE points to a max6675 handle structure
  * @param[in] STRUCTURE is max6675_handle_t
  * @note      none
  */
@@ -106,7 +106,7 @@ typedef struct max6675_info_s
 
 /**
  * @brief     link spi_init function
- * @param[in] HANDLE points to an max6675 handle structure
+ * @param[in] HANDLE points to a max6675 handle structure
  * @param[in] FUC points to a spi_init function address
  * @note      none
  */
@@ -114,7 +114,7 @@ typedef struct max6675_info_s
 
 /**
  * @brief     link spi_deinit function
- * @param[in] HANDLE points to an max6675 handle structure
+ * @param[in] HANDLE points to a max6675 handle structure
  * @param[in] FUC points to a spi_deinit function address
  * @note      none
  */
@@ -122,7 +122,7 @@ typedef struct max6675_info_s
 
 /**
  * @brief     link spi_read_cmd function
- * @param[in] HANDLE points to an max6675 handle structure
+ * @param[in] HANDLE points to a max6675 handle structure
  * @param[in] FUC points to a spi_read_cmd function address
  * @note      none
  */
@@ -130,7 +130,7 @@ typedef struct max6675_info_s
 
 /**
  * @brief     link delay_ms function
- * @param[in] HANDLE points to an max6675 handle structure
+ * @param[in] HANDLE points to a max6675 handle structure
  * @param[in] FUC points to a delay_ms function address
  * @note      none
  */
@@ -138,7 +138,7 @@ typedef struct max6675_info_s
 
 /**
  * @brief     link debug_print function
- * @param[in] HANDLE points to an max6675 handle structure
+ * @param[in] HANDLE points to a max6675 handle structure
  * @param[in] FUC points to a debug_print function address
  * @note      none
  */
@@ -157,7 +157,7 @@ typedef struct max6675_info_s
 
 /**
  * @brief      get chip's information
- * @param[out] *info points to an max6675 info structure
+ * @param[out] *info points to a max6675 info structure
  * @return     status code
  *             - 0 success
  *             - 2 handle is NULL
@@ -167,7 +167,7 @@ uint8_t max6675_info(max6675_info_t *info);
 
 /**
  * @brief     initialize the chip
- * @param[in] *handle points to an max6675 handle structure
+ * @param[in] *handle points to a max6675 handle structure
  * @return    status code
  *            - 0 success
  *            - 1 spi initialization failed
@@ -179,7 +179,7 @@ uint8_t max6675_init(max6675_handle_t *handle);
 
 /**
  * @brief     close the chip
- * @param[in] *handle points to an max6675 handle structure
+ * @param[in] *handle points to a max6675 handle structure
  * @return    status code
  *            - 0 success
  *            - 1 deinit failed
@@ -191,7 +191,7 @@ uint8_t max6675_deinit(max6675_handle_t *handle);
 
 /**
  * @brief      read the temperature
- * @param[in]  *handle points to an max6675 handle structure
+ * @param[in]  *handle points to a max6675 handle structure
  * @param[out] *raw points to a raw data buffer
  * @param[out] *temp points to a temp buffer
  * @return     status code
@@ -217,7 +217,7 @@ uint8_t max6675_read(max6675_handle_t *handle,uint16_t *raw, float *temp);
 
 /**
  * @brief      get the chip register
- * @param[in]  *handle points to an max6675 handle structure
+ * @param[in]  *handle points to a max6675 handle structure
  * @param[out] *data points to a data buffer
  * @return     status code
  *             - 0 success
