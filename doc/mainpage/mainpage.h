@@ -1,6 +1,6 @@
 /**
  * @mainpage  LibDriver MAX6675
- * @brief     libdriver max6675 is a full function driver of max6675 and it can run in both MCU and Linux platform.
+ * @brief     LibDriver MAX6675 is a full function driver of MAX6675 and it can run in both MCU and Linux platform.
  * @version   1.0.0
  * @author    Shifeng Li
  *
