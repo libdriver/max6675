@@ -40,7 +40,7 @@ static max6675_handle_t gs_handle;        /**< max6675 handle */
 
 /**
  * @brief     read test
- * @param[in] times is the test times
+ * @param[in] times test times
  * @return    status code
  *            - 0 success
  *            - 1 test failed
