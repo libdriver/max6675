@@ -91,8 +91,8 @@ uint8_t max6675_basic_deinit(void)
 
 /**
  * @brief      basic example read the temperature
- * @param[out] *raw points to a raw temperature buffer
- * @param[out] *temp points to a converted temperature buffer
+ * @param[out] *raw pointer to a raw temperature buffer
+ * @param[out] *temp pointer to a converted temperature buffer
  * @return     status code
  *             - 0 success
  *             - 1 read failed
