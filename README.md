@@ -10,7 +10,7 @@
 
 The MAX6675 performs cold-junction compensation and digitizes the signal from a type-K thermocouple. The data is output in a 12-bit resolution, SPI-compatible, read-only format.This converter resolves temperatures to 0.25°C, allows readings as high as +1024°C, and exhibits thermocouple accuracy of 8 LSBs for temperatures ranging from 0°C to +700°C.The MAX6675 is available in a small, 8-pin SO package.It can be used in industrial, appliances, HVAC and so on.
 
-LibDriver MAX6675 is a full-featured driver of MAX6675 launched by LibDriver.It provides reading temperature function and so on. LibDriver is MISRA compliant.
+LibDriver MAX6675 is a full-featured driver for MAX6675, launched by LibDriver.It provides temperature reading and additional features. LibDriver is MISRA compliant.
 
 ### Table of Contents
 
