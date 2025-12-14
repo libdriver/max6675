@@ -23,7 +23,7 @@
  *
  * @file      driver_max6675_read_test.c
  * @brief     driver max6675 read test source file
- * @version   21.0.0
+ * @version   1.0.0
  * @author    Shifeng Li
  * @date      2022-11-30
  *
